@@ -50,7 +50,9 @@ body, html {
 .main img {
     top: 13px;
     position: relative;
-    display:inline-block
+    display:inline-block;
+    width: 90px; 
+    height: 90px;
 }
 
 @font-face {
@@ -58,12 +60,17 @@ body, html {
     src: url("fonts/Kinetic-Light.otf") format("opentype");
 }
 
-/* Media Query for screens smaller than 768 pixels */
 @media only screen and (max-width: 768px) {
-    .main h1 {
-        font-size: 65px;
+    .main_text {
+        font-size: 35px;
     }
+    .main img{
+        width: 20px;
+        height: 20px;
+    }
+
 }
+
 
 /* Media Query for screens between 768 and 1024 pixels */
 @media only screen and (min-width: 768px) and (max-width: 1450px) {
